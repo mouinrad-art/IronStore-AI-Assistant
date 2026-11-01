@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "buildCommand": "",
+  "functions": { "api/index.py": { "maxDuration": 60, "includeFiles": "index/**" } },
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api" },
+    { "source": "/", "destination": "/index.html" }
+  ]
+}
